@@ -36,9 +36,10 @@ vagrant@ubuntu-vm:~$ sudo docker images # to list the docker images in the virtu
 vagrant@ubuntu-vm:~$ sudo docker ps # to list the running docker images
 ```
 
-### To shutdown, exit out of the virtual machine
+### To shutdown:
 ```
-vagrant@ubuntu-vm:~$ exit
+vagrant@ubuntu-vm:~$ exit # exit out of the virtual machine
 yourhost% vagrant halt # to stop the virtual machine
 yourhost% vagrant destroy # to delete the virtual machine
 ```
+
