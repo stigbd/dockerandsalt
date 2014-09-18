@@ -1,11 +1,11 @@
 
 Vagrant.configure(2) do |config|
 
-  # **** apache - simple http server **** 
+  # **** ubuntu - with a simple http server **** 
 
-  config.vm.define "apache" do |config|
+  config.vm.define "ubuntu" do |config|
     config.vm.box = "ubuntu/trusty64"
-    config.vm.hostname = "apache"
+    config.vm.hostname = "ubuntu-vm"
 
     config.vm.provider "virtualbox" do |vb|
       vb.customize ["modifyvm", :id, "--memory", "2048"]
@@ -21,6 +21,6 @@ Vagrant.configure(2) do |config|
       salt.run_highstate = true
       salt.verbose = true
     end  
-  end # apache
+  end # ubuntu
 
 end
