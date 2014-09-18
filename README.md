@@ -10,13 +10,14 @@ is a masterless minion.
 
 To start the apache docker-image inside the ubuntu-vm virtual machine:
 --------------
-'''
+```
 sudo apt-get install vagrant # this will work on debian-based linux-distros
 vagrant up
 vagrant ssh ubuntu-vm -c 'sudo salt-call --local state.highstate'
-'''
+```
 
 In your favorite browser open the following url:
+
 http://localhost:8089
 
 and you should see the apache default page.
